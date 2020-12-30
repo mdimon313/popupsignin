@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ! -------------------------> pop Up Button <------------------- */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(0,0,0,0.4));
+    position: relative;
+}
+.button {
+    padding: .9rem 3rem;
+    border: none;
+    outline: none;
+    background: #fb5200;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Open sans';
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    perspective: 1000px;
+    transition: all .3s ease-in-out;
+}
+
+.button:hover {
+    box-shadow: 0px 5px 10px -2px rgb(119, 116, 116);
+}
+
+
+/* ! POP UP SIGN IN FORM */
+
+.login {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: all .5s ease-in-out;
+}
+form {
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    padding: 30px;
+    text-align: center;
+    margin:  200px auto;
+    position: relative;
+    border-radius: 4px;
+    z-index: 2;
+}
+#close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.836);
+    transition: all .3s ease-in-out;
+}
+#close:hover{
+    box-shadow: 0px 0px 5px rgb(3, 3, 3);
+}
+#close i {
+    font-size: 14px;
+}
+form .input {
+    display: block;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+form h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px  6px #000;
+    color: #fff;
+}
+form input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin: 10px
+}
+.check {
+    margin: 1rem 0;
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(37, 36, 36, 0.753);
+}
+.login-btn {
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all .4s ease-in-out;
+}
+.login-btn:hover {
+    background: #fb5200;
+    color: #fff;
+}
